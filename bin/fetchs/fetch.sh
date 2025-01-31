@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 user="${USER}"
 shell="$(basename ${SHELL})"
 distro=$(. /etc/os-release ; echo "$ID")
