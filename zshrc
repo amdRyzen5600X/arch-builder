@@ -14,6 +14,11 @@ if [ ! -d "$ZINIT_HOME" ]; then
 	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
+export EDITOR="nvim"
+
+PATH=${PATH}:`go env GOPATH`/bin
+PATH=${PATH}:~/.local/scripts/
+
 source "${ZINIT_HOME}/zinit.zsh"
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
@@ -56,3 +61,5 @@ alias c="clear"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+wal -Rq
+bindkey -s ^f "tmux-sessionizer"
