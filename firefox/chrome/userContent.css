@@ -1,11 +1,11 @@
 @import url("userChrome.css");
 
 /* Removes white loading page */
-@-moz-document url(about:blank), url(about:newtab), url(about:home) { 
-    html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay { 
-      background: var(--zproger-bg) !important; 
-    } 
-  } 
+@-moz-document url(about:blank), url(about:newtab), url(about:home) {
+    html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+      background: var(--amdryzen-bg) !important;
+    }
+  }
 
 @media (-moz-proton) {
   @-moz-document url("about:home"), url("about:newtab") {
@@ -116,11 +116,11 @@
       }
     }
   }
-  @-moz-document url("about:welcomeBack"), url("chrome://browser/content/aboutWelcomeBack.xhtml") { 
-    @media (min-width: 970px) { 
-      .title { 
-        background-image: url("chrome://browser/skin/welcome-back.svg") !important; 
-      } 
-    } 
-  } 
+  @-moz-document url("about:welcomeBack"), url("chrome://browser/content/aboutWelcomeBack.xhtml") {
+    @media (min-width: 970px) {
+      .title {
+        background-image: url("chrome://browser/skin/welcome-back.svg") !important;
+      }
+    }
+  }
 }
